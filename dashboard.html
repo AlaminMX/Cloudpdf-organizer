@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - PDF Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen bg-gradient">
+        <header class="header">
+            <div class="logo">
+                <img src="/public/placeholder-logo.svg" alt="Logo" class="logo-img">
+                <span class="logo-text">PDF Organizer</span>
+            </div>
+            <div class="user-profile">
+                <img src="/public/placeholder-user.jpg" alt="User" class="user-avatar">
+                <button id="logout-btn" class="btn btn-secondary">Logout</button>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="upload-section">
+                <h2 class="section-title">Upload PDFs</h2>
+                <div class="upload-box">
+                    <input type="file" id="pdf-upload" class="file-input" multiple accept=".pdf">
+                    <label for="pdf-upload" class="upload-label">
+                        <svg class="upload-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-4-4V7a4 4 0 014-4h10a4 4 0 014 4v5a4 4 0 01-4 4h-2m-6-4l3 3m0 0l3-3m-3 3V3"></path></svg>
+                        <span>Drag & drop your PDFs here or click to browse</span>
+                    </label>
+                </div>
+            </div>
+            <div class="pdf-list-section">
+                <h2 class="section-title">Your PDFs</h2>
+                <div id="pdf-list" class="pdf-list"></div>
+            </div>
+        </main>
+    </div>
+    <script src="auth.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - PDF Organizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="min-h-screen bg-gradient flex items-center justify-center">
+        <div class="login-container">
+            <h1 class="hero-title">Sign Up</h1>
+            <p class="hero-subtitle">Create a new PDF Organizer account.</p>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" class="form-input" required>
+                </div>
+                <div id="error-message" class="error-message" style="display: none;"></div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+            </form>
+            <p class="text-center mt-4">
+                Already have an account? <a href="login.html" class="text-blue-500">Login</a>
+            </p>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
